@@ -1,0 +1,10 @@
+*.pyc
+test_package/build
+
+# Visual Studio
+out/
+.vs/
+
+# Visual Studio Code
+.vscode/
+CMakeSettings.json
