@@ -42,3 +42,5 @@ class ChannelsConan(ConanFile):
 
     def package_info(self):
         self.cpp_info.libs = ["Channels"]
+        if not self.settings.os == "Windows":
+            self.cpp_info.cxxflags = ["-pthread"]
