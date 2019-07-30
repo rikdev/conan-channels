@@ -13,6 +13,7 @@ class ChannelsConan(ConanFile):
     default_options = "shared=False"
     generators = "cmake"
     requires = "COW/0.1.0@rikdev/stable"
+    build_requires = "cmake_installer/3.15.1@conan/stable"
 
     def source(self):
         git = tools.Git()
